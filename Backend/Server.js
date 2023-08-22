@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, "../Frontend/build")))
 
 
 
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 3000);
 app.post('/formdata',async(req,resp)=>{
     let data= new form({
         name: req.body.name,
